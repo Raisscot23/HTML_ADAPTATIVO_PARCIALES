@@ -1,0 +1,162 @@
+body {
+    background-image: url(../images/pagina/fondo-textura-papel-vertical-negro.jpg);
+    background-size: cover;
+    min-width: 300px;
+}
+.boton {
+    width: 450px;
+    height: 100px;
+    background-image: url(../images/pagina/elemento-rectangulo_rojo.png);
+    background-size: cover;
+    background-color: #0000;
+    border: none;
+    cursor: pointer;
+    line-height: 100px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--Negrito);
+    transition: 0.3s;
+}
+.boton:hover {
+    transform: scale(1.2) rotate(-5deg);
+}
+
+/*------------------------------------------------------------MENU---------------------------------------------------------------------*/
+.menu {
+    width: 100vw;
+    height: 65vh;
+    background-image: url(../images/fotos/ubicaciones/fondo_foto_local-1.jpg);
+    background-size: cover;
+    background-position: bottom;
+    margin-top: 125px;
+    animation: slideDown 1s ease-in 0.3s backwards;
+    box-shadow: 0px 5px 30px #000B;
+}
+.menu .contenido {
+    width: 40vw;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.slogan {
+    color: white;
+}
+.menu a {
+    text-decoration: none;
+    color: var(--Negrito);
+}
+
+/*---------------------------------------------------------UBICACIONES-----------------------------------------------------------------*/
+.ubicaciones {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    margin-top: 80px;
+}
+.ubicaciones .elemento {
+    width: 900px;
+    position: absolute;
+    bottom: -250px;
+    left: calc(-1 * (800px - 40vw));
+    user-select: none;
+    pointer-events: none;
+    animation: slideRight 1s ease-in 1s backwards;
+    z-index: -5;
+}
+.ubicaciones .cuadro {
+    height: 1000px;
+    position: relative;
+    top: 550px;
+    left: -210px;
+}
+.ubicaciones .salmonUno {
+    width: 450px;
+    position: relative;
+    top: -250px;
+    left: 490px;
+    rotate: 40deg;
+}
+.ubicaciones .salmonDos {
+    width: 480px;
+    position: relative;
+    rotate: 20deg;
+    top: -320px;
+    left: 450px;
+}
+.ubicaciones .contenido {
+    width: 80vw;
+    max-width: 1200px;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    padding: 0px;
+    z-index: 0;
+}
+.ubicaciones .textoDerecha {
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.textoDerecha h2 {
+    color: var(--Cafesito);
+}
+.textoDerecha p {
+    color: white;
+}
+
+/*--------------------------------------------------------RESERVACIONES----------------------------------------------------------------*/
+ .reservacion {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    background-image: url(../images/pagina/Fondo-textura-crema-ripped.png);
+    background-size: contain;
+    background-repeat: round;
+    padding-top: 100px;
+    z-index: 0;
+    overflow-y: hidden;
+}
+.reservacion .contenido {
+    width: 50vw;
+    max-width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+} 
+.reservacion .elemento {
+    width: 100vw;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+}
+.reservaciones p {
+  color: var(--Negrito);
+}
+
+@media (max-width: 500px) {
+    .boton {
+        width: 300px;
+    }
+    .ubicaciones .textoDerecha {
+        float: none;
+    }
+}
+@media (max-width:710px) {
+    .reservacion {
+        background-size: cover;
+    }
+}

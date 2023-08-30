@@ -1,0 +1,74 @@
+[
+    {
+        "precio": "15.00",
+        "id": 1,
+        "title": "Fideos",
+        "thumbnailUrl": "https://indexgeneralhtml5.000webhostapp.com/Parcial%201/imgs/fideos_1.png"
+    },
+    {
+        "precio": "25.00",
+        "id": 2,
+        "title": "Fideos al gusto",
+        "thumbnailUrl": "https://indexgeneralhtml5.000webhostapp.com/Parcial%201/imgs/fideos_2.png"
+    },
+    {
+        "precio": "10.00",
+        "id": 3,
+        "title": "Fideos con carne",
+        "thumbnailUrl": "https://indexgeneralhtml5.000webhostapp.com/Parcial%201/imgs/fideos_3.png"
+    },
+    {
+        "precio": "5.00",
+        "id": 4,
+        "title": "Gohan",
+        "thumbnailUrl": "https://indexgeneralhtml5.000webhostapp.com/Parcial%201/imgs/gohan_1.png"
+    },
+    {
+        "precio": "15.00",
+        "id": 5,
+        "title": "Gohan para compartir",
+        "thumbnailUrl": "https://indexgeneralhtml5.000webhostapp.com/Parcial%201/imgs/gohan_2.png"
+    },
+    {
+        "precio": "10.00",
+        "id": 6,
+        "title": "Gohan x2",
+        "thumbnailUrl": "https://indexgeneralhtml5.000webhostapp.com/Parcial%201/imgs/gohan_3.png"
+    },
+    {
+        "precio": "20.00",
+        "id": 7,
+        "title": "Niguri",
+        "thumbnailUrl": "https://indexgeneralhtml5.000webhostapp.com/Parcial%201/imgs/niguiri_1.png"
+    },
+    {
+        "precio": "15.00",
+        "id": 8,
+        "title": "Niguri del Este",
+        "thumbnailUrl": "https://indexgeneralhtml5.000webhostapp.com/Parcial%201/imgs/niguiri_2.png"
+    },
+    {
+        "precio": "10.00",
+        "id": 9,
+        "title": "El Gran Niguri",
+        "thumbnailUrl": "https://indexgeneralhtml5.000webhostapp.com/Parcial%201/imgs/niguiri_3.png"
+    },
+    {
+        "precio": "15.00",
+        "id": 10,
+        "title": "Rollos #1",
+        "thumbnailUrl": "https://indexgeneralhtml5.000webhostapp.com/Parcial%201/imgs/rollo_1.png"
+    },
+    {
+        "precio": "10.00",
+        "id": 11,
+        "title": "Rollos #2",
+        "thumbnailUrl": "https://indexgeneralhtml5.000webhostapp.com/Parcial%201/imgs/rollo_2.png"
+    },
+    {
+        "precio": "15.00",
+        "id": 12,
+        "title": "Rollos #3",
+        "thumbnailUrl": "https://indexgeneralhtml5.000webhostapp.com/Parcial%201/imgs/rollo_3.png"
+    }
+]

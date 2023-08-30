@@ -1,0 +1,241 @@
+body{
+  background-color: #111724
+}
+#sushi_gigante{
+  position: absolute;
+  top: 300px;
+  left: 200px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-image: url(../images/menu_parche/disco.png);
+  z-index: 1;
+  
+}
+
+.menu_header{
+  background-image: url(../rockandrollo/images//menu_parche/header_menu.png);
+  backdrop-filter: blur(8px);
+  color: white;
+  height: 500px;
+  width: 100%;
+}
+
+.menu_header .box_h1{
+  margin-top: 180px;
+  margin-left: 50px;
+}
+.menu_categorias_box{
+  display: flex;
+  width: auto;
+  height: auto;
+}
+
+.caja_reservaciones{
+  width: 35%;
+  height: 1000px;
+  background-color: var(--Naranjita)
+
+}
+
+.para_llevar{
+  margin-top: 150px;
+
+}
+
+
+
+.menu_subcategorias_box{
+  width: 65%;
+  height: 1000px;
+  background-color: var(--Cafesito);
+  display: block;
+  padding: 2%;
+  
+
+}
+
+.menu_subcategorias_box h2{
+  font-size: 80px;
+  text-align: center;
+}
+
+.subcategoria_box{
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 10px ;
+  margin-right: 10px;
+  float: left;
+  text-align: center;
+  
+}
+
+
+  .subcategoria_img{
+    width: 100px;
+    height: 100px;
+    float: center;
+    position: relative;
+    left: 75px;
+
+
+  }
+
+  .subcategoria_titulo{
+    color: #000000;
+    display: block;
+    
+
+  }
+    .subcategoria_titulo p{
+      font-size: 40px;
+    }
+
+  .subcategoria_descripcion p{
+    font-size: 15px;
+  }
+
+
+.menu_completo_box{
+  width: 100%;
+  height: auto;
+  display: block;
+  
+}
+
+.categoria_menu{
+  background-color: var(--Cafesito);
+  height: 600px;
+  width: 100%;
+  padding: 2%;
+  margin-bottom: 20px;
+  display: inline-block;
+  position: relative;
+  
+}
+
+
+
+.menu_completo_box h5{
+  color: white;
+  font-size: 80px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.box_titulo_subcategoria{
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+  .categoria_imagen{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin-left: 60px;
+    
+  }
+
+.platillo_box{
+  height: 120px;
+  width: 450px;
+  display: inline-flex;
+  padding: 5px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+  .platillo_img{
+    height: 110px;
+    width: 110px;
+    display: inline-block;
+    margin-left: 45px;
+    border-radius: 50%;
+  }
+
+  .platillo_nombre{
+    margin-left: 10px;
+    margin-bottom: 30px;
+    float:inline-start;
+    position: relative;
+
+
+  }
+
+  .platillo_ingredientes{
+    font-size: 20px;
+    display: block
+    
+  }
+
+  #categoria7 p{
+    justify-content: center;
+    display: flex;
+    margin-left: 50%;
+  }
+
+#sushi_gigante2{
+  position: absolute;
+  top: 300px;
+  left: 200px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-image: url(../images/menu_parche/disco.png);
+  z-index: 1;
+  
+}
+#box_confirmacion{
+    margin-top: 50px;
+    margin-left: 250px;
+    box-shadow: var(--shadow-box);
+    height: 650px;
+    width: 1000px;
+    margin-bottom: 100px;
+    align-items: center;
+    font-size: 80px;
+}
+
+#box_respuesta{
+    background-color: var(--color_amarillo);
+    box-shadow: var(--shadow-box);
+    width: 500px;
+    height: 300px;
+    font-size: 200px;
+    margin-left: 250px;
+    text-align: center;
+    margin-top: 50px;
+    font-family: "Harlow_Solid_Regular";
+    color: white;
+}
+#box_respuesta img{
+    margin-bottom: 50px;
+    animation: sacudido 2s infinite;
+}
+
+@keyframes sacudido {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(0, -10px);
+    }
+    50% {
+      transform: translate(0, 0);
+    }
+    75% {
+      transform: translate(0, 10px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }

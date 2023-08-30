@@ -1,0 +1,339 @@
+/* INDICE:
+        1. Llamado de fuentes
+        2. Variables de color y fuentes de uso general en los documentos
+        3. Declaracion de estilos para titulos y parrafos en general para el sitio
+        4. Animaciones generales para uso en sitio
+        5. Encabezado
+        6. Footer
+*/
+
+/*---------------------------------------------------FUENTES-----------------------------------------------------------*/
+@font-face {
+    font-family: "Harlow_Solid_Regular";
+    src: url(/fonts/Harlow\ Solid\ Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: "BebasNeue_Regular";
+    src: url(/fonts/BebasNeue-Regular.ttf);
+  }
+  
+  /*--------------------------------------------------VARIABLES----------------------------------------------------------*/
+  :root{ /* Se declaran variables utiles de multiples usos como colores y fuentes*/
+      --rositafresita-color: #ff69b4;
+      --Naranjita: #ef4b3b;
+      --Blanquito: #fafcfd;
+      --Cafesito: #d7b881;
+      --Negrito: #111724;
+    
+      --Fonti_1: "Harlow_Solid_Regular";
+      --Fonti_2: "BebasNeue_Regular";
+  }
+  * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+  }
+  
+  /*------------------------------------------------ESTILOS TEXTOS-------------------------------------------------------*/
+  h1 {
+      font-family: var(--Fonti_1);
+      font-size: 78px;
+      font-weight: 700;
+      margin-bottom: 50px;
+  }
+  h2 {
+      font-family: var(--Fonti_1);
+      font-size: 60px;
+      font-weight: 700;
+  }
+  h3 {
+      font-family: var(--Fonti_1);
+      font-size: 48px;
+      font-weight: 500;
+  }
+  h4 {
+      font-family: var(--Fonti_1);
+      font-size: 36px;
+  }
+  h5 {
+      font-family: var(--Fonti_2);
+      font-size: 48px;
+      font-weight: 500;
+  }
+  h6 {
+      font-family: var(--Fonti_2);
+      font-size: 20px;
+      font-weight: 300;
+  }
+  p {
+      font-family: var(--Fonti_2);
+      font-size: 28px;
+      font-weight: 400;
+  }
+  a {
+      font-family: var(--Fonti_2);
+      text-decoration: none;
+  }
+
+  a:visited{
+    text-decoration: none;
+  }
+  
+  /*-----------------------------------------------ANIMACIONES-----------------------------------------------------------*/
+  @keyframes slideLeft {
+      0%{transform: translateX(100%);}
+      100%{transform: translateX(0);}  
+  }
+  @keyframes slideRight {
+      0%{transform: translateX(-100%);}
+      100%{transform: translateX(0);}  
+  }
+  @keyframes slideDown {
+      0%{transform: translateY(-50%);
+          filter: opacity(0%);}
+      100%{transform: translateY(0);
+          filter: opacity(100%);}  
+  }
+  
+  /*------------------------------------------------ENCABEZADO-----------------------------------------------------------*/
+  .body {
+      position: relative;
+      overflow-x: hidden;
+  }
+  header {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      z-index: 2;
+  }
+  .crawler {
+      height: 25px;
+      width: 100%;
+      background-color: var(--Naranjita);
+      color: white;
+      text-align: center;
+      line-height: 25px;
+  }
+      .crawler h6{
+          display: inline;
+      }
+      .crawler a {
+          color: white;
+          cursor: pointer;
+      }
+  .encabezado {
+      height: 100px;
+      width: 100%;
+      background-color: var(--Cafesito);
+      padding: 0 50px;
+  }
+      .encabezado .contenido {
+          height: 100px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          position: relative;
+      }
+          .iconos{
+              height: 100px;
+              display: flex;
+              align-items: center;
+          }
+              .redSocial {
+                  position: inline-block;
+                  height: 45px;
+                  margin-right: 20px;
+                  transition: 0.3s;
+              }
+              .redSocial:hover {
+                  transform: scale(1.2);
+              }
+              .menuHamburguesa {
+                  cursor: pointer;
+                  transition: 0.3s;
+              }
+              .menuHamburguesa:hover {
+                  transform: scale(1.1);
+              }
+              .menuHamburguesa span {
+                  height: 5px;
+                  width: 40px;
+                  display: block;
+                  margin-bottom: 8px;
+                  background-color: var(--Negrito);
+              }
+          .navegador{
+              width: 400px;
+              height: 100vh;
+              padding: 200px 80px;
+              position: fixed;
+              top: 0px;
+              right: 0px;
+              background-image: url(../images/pagina/fondo-textura-papel-vertical-crema.jpg);
+              background-size: cover;
+              overflow: hidden;
+              z-index: 9;
+              animation: slideLeft 0.5s ease-out;
+          }
+              .ocultar {
+                  display: none;
+              }
+              .navegador a {
+                  position: relative;
+                  display: block;
+                  margin-bottom: 50px;
+                  text-decoration: none;
+                  font-size: 40px;
+                  color: var(--Negrito);
+                  z-index: 10;
+                  transition: .3s;
+              }
+                  .navegador a:hover {
+                      transform: scale(1.2) translateX(20px);
+                      cursor: pointer;
+                  }
+              .botonCerrar {
+                  font-family: sans-serif;
+                  font-size: 24px;
+                  font-weight: 700;
+                  position: absolute;
+                  top: 50px;
+                  right: 50px;
+                  user-select: none;
+                  z-index: 10;
+                  transition: .5s;
+              }
+                  .botonCerrar:hover {
+                      cursor: pointer;
+                      transform: scale(1.2);
+                  }
+              .navegador .elemento {
+                  height: 1500px;
+                  position: absolute;
+                  bottom: -400px;
+                  right: -800px;
+                  filter: opacity(70%);
+                  z-index: 9;
+                  user-select: none;
+                  pointer-events: none;
+              }
+  .fullscreen {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      background-color: #11172455;
+  }
+  
+  @media (max-width: 500px) {
+      .encabezado {
+          padding: 0 10px;
+      }
+      .redSocial {
+          height: 35px;
+          margin-right: 10px;
+      }
+      .navegador {
+          width: 100%;
+          right: 0px;
+          text-align: center;
+      }
+      .crawler h6{
+          font-size: 15px;
+      }
+  }
+  
+  /*---------------------------------------------------FOOTER------------------------------------------------------------*/
+  footer {
+    clear: both;
+    height: auto;
+    min-height: 400px;
+    width: 100%;
+    background-color: var(--Negrito);
+    background-image: url(../images/pagina/fondo-textura-papel-horizontal-negro.jpg);
+    background-size: cover;
+  }
+  footer .contenido {
+    width: 90%;
+    height: 100%;
+    margin: 0px auto;
+    padding: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items:start;
+    position: relative;
+  }
+  footer .columna {
+
+    min-width: 120px;
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+  footer li, footer a {
+    list-style: none;
+    text-decoration: none;
+    margin-bottom: 20px;
+  }
+  footer p, footer h6 {
+    color: var(--Cafesito);
+    transition: 0.3s;
+  }
+  footer .columna p:hover {
+    color: var(--Naranjita);
+  }
+  footer .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .logo img {
+    height: 220px;
+    pointer-events: none;
+  }
+  footer .telefono {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer .telefono img{
+    height: 50px;
+    margin-left: 10px;
+  }
+  footer .copyright {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .copyright img {
+    height: 140px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 500px) {
+    h1 {
+        font-size: 55px;
+        margin-bottom: 20px;
+    }
+    h2 {
+        font-size: 48px;
+    }
+    footer .columna {
+        min-width: 90px;
+    }
+    footer p {
+        font-size: 24px;
+    }
+    footer .logo img {
+        height: 180px;
+    }
+    footer .telefono img{
+        height: 40px;
+    }
+  }

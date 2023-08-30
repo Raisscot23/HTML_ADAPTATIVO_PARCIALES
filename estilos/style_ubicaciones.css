@@ -1,0 +1,268 @@
+:root{
+    /*colores*/
+    --rositafresita-color: #ff69b4;
+    --Naranjita: #f04b3b;
+    --Blanquito: #fafcfd;
+    --Cafesito: #D8B982;
+    --Negrito: #131724;
+    /*Fuentes*/
+    --Fonti_1: "Harlow_Solid_Regular";/*cambie*/
+    --Fonti_2: "BebasNeue-Regular";
+  }
+  
+  *{
+    margin: 0%;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif; 
+    text-decoration: none;
+    list-style: none;
+  }
+
+
+/*//////////////////////////////other////////////////////////*/
+
+@font-face {
+  font-family: "Harlow_Solid_Regular"; /*cambie*/
+  src: url(/fonts/HarlowSolid_Regular_3.ttf)
+}
+
+@font-face {
+  font-family: "BebasNeue-Regular";/*cambie*/
+  src: url(/fonts/BebasNeue-Regular.ttf)
+}
+
+
+
+
+
+/*//////////////////////////////header////////////////////////*/
+
+.header{
+ /* background-color: #131724;*/
+  height: 100px;
+  width: auto;
+  
+}
+
+/*//////////////////////////////main//////////////////////////*/
+body{
+  background-image: url(../images/pagina/fondo-textura-papel-horizontal-crema.jpg);
+  
+}
+/**/
+.principal{
+  width: 98%;
+  height: 550px;
+  margin: auto;
+  margin-top: 110px;/*cambie*/
+  position: relative;
+}
+
+
+/*////////////////////////cuadro a la izquierda*/
+
+
+/*no se cambia la letra*/
+.ubicaciones{
+  width: auto;
+  height: 115px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.ubicaciones p{
+  font-family: var(--Fonti_1);
+  color: var(--Negrito);
+
+  font-size: 70px;
+}
+
+
+.cuadro_l1{
+  width: 50%;
+  max-width: 5%;
+  height: 328px;
+
+  margin-left: 13px;
+  display: inline-block; 
+
+
+}
+.cuadro_l1 img{
+  margin-left: 4.5%;/*59px*/
+  width: 565px;/*510*/
+  position: absolute;
+  border-radius: 20px;
+  border-bottom: #f04b3b 100px;
+  box-shadow: 2px 2px 5px var(--Negrito);
+
+}
+
+
+
+/*////////////////////////cuadro a la derecha*/
+.cuadro_r1{
+  width: 45%;
+  height: 400px;
+
+  margin-left: 50%;/*275*/
+
+  display: inline-block;
+  position: absolute;
+}
+
+.cr_1{
+  width: 300px;
+  height: 75px;/*le cambie*/
+  margin-top: 3px;
+  position: relative;
+  
+}
+
+/*
+.cr_1 img:hover {
+  filter: saturate(10%); /* Aumenta la saturación al 200% 
+  transition: filter 0.6s ease; /* Agrega una transición suave 
+  cursor: pointer;
+  pointer-events: auto
+}
+*/
+.cr_1:hover img {
+  transition: filter 0.9s ease;
+  filter: blur(2.5px);
+  
+
+}
+
+.cr_1 img{
+  width: 156%;
+  height: 126%;/**/
+  top: -60%;
+  left: 0;
+  
+  transform: translate(-7%, -6%);/*le cambie*/
+  /*background-color: aqua;*/
+}
+
+
+.cr_1 p{
+  font-family: var(--Fonti_2);
+  color: var(--Blanquito);
+  letter-spacing: 1px;
+  font-size: 20px;
+  /*font-weight: bold ;*/
+  margin: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+
+.cr_1 p::after {
+  content:"TEL: (656) 625 1079.";
+}
+
+.cr_2{
+  width: 372px;
+  height: 78px;/*le cambie*/
+  position: relative;
+  margin-top: 35px;/*le cambie*/
+ 
+
+}
+/*
+.cr_2 img:hover {
+  filter: saturate(10%); /* Aumenta la saturación al 200% 
+  transition: filter 0.6s ease; /* Agrega una transición suave 
+  cursor: pointer;
+  
+}
+*/
+
+.cr_2:hover img {
+  transition: filter 0.9s ease;
+  filter: blur(2.5px);
+}
+
+
+.cr_2 img{
+  
+  width: 130%;
+  height: 124%;/*400*/
+  top: -50%;
+  left: 0;
+  transform: translate(-7%, -8%);/*le cambie*/
+
+}
+.cr_2 p{
+  color: var(--Blanquito);
+  font-family: var(--Fonti_2);
+  letter-spacing: 1px;
+  font-size: 20px;
+
+  margin: 3px;
+
+  position: absolute; 
+  top: 0;
+  left: 0;
+}
+
+.cr_2 p::after {
+  content:"TEL: (656) 000 5671.";
+}
+
+.cr_3{
+  width: 310px;
+  height: 78px;
+  position: relative;
+  margin-top: 35px;/*le cambie*/
+  
+}
+
+/*
+.cr_3 img:hover {
+  filter: saturate(10%); /* Aumenta la saturación al 200% 
+  transition: filter 0.6s ease; /* Agrega una transición suave 
+  cursor: pointer;
+}
+*/
+
+
+
+
+
+
+
+.cr_3:hover img {
+  transition: filter 0.9s ease;
+  filter: blur(2.5px);
+}
+
+
+
+.cr_3 img{
+  width: 175%;
+  height: 126%;/*400*/
+  top: -50%;
+  left: 0;
+  transform: translate(-6%, -10%);
+}
+.cr_3 p{
+  color: var(--Blanquito);
+  font-family: var(--Fonti_2);
+  letter-spacing: 1px;
+  font-size: 20px;
+
+  margin: 3px;
+
+  position: absolute; 
+  top: 0;
+  left: 0;
+}
+
+.cr_3 p::after {
+  content:" TEL : (912) 467 2056.";
+}

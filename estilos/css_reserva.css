@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: auto;
+}
+
+@font-face {
+  font-family: "fonti1";
+  src: url(../fonts/Harlow\ Solid\ Regular.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: "fonti2";
+  src: url(../fonts/BebasNeue-Regular.ttf) format('ttf');
+}
+
+body {
+  font-family: "fonti1", serif;
+}
+
+#main {
+  background-image: url(../images/branding/fondo_reserva.jpg);
+  width: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#content {
+  margin-top: 500px;
+  width: auto;
+
+  text-align: center;
+}
+
+#titulo {
+  font-family: "fonti1", serif;
+  text-align: center;
+  color: white;
+  font-size: 150px;
+  margin: 120px;
+}
+
+h2 {
+  font-family: "fonti2", serif;
+  margin-left: 50px;
+  color: white;
+  font-size: 40px;
+  text-align: left;
+}
+
+.mapa {
+  display: inline-block;
+  position: relative;
+  background-color: #d8b982;
+  margin: 15px;
+  padding: 20px;
+}
+
+form {
+  font-family: "fonti2", serif;
+
+  display: inline-block;
+  max-width: 450px;
+  margin-left: 50px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+input[type="number"] {
+  width: 400px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #d8b982;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #f04b3b;
+}
